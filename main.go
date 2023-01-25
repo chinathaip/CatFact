@@ -20,7 +20,7 @@ func main() {
 	e := router.RegisterRouter()
 
 	srv := &http.Server{
-		Addr:    ":8080",
+		Addr:    ":3001",
 		Handler: e,
 	}
 	signals := make(chan os.Signal, 1)

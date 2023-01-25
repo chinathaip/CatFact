@@ -18,7 +18,7 @@ func NewRouter(s service.Service) *Handler {
 func (r *Handler) RegisterRouter() *echo.Echo {
 	e := echo.New()
 
-	e.GET("/catfact", r.getCatFact)
+	e.GET("/", r.getCatFact)
 	return e
 }
 
